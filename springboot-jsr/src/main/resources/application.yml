@@ -1,0 +1,9 @@
+logging:
+  level:
+   houzm.game.springboot: debug
+spring:
+  mvc:
+    favicon:
+      enabled: false
+server:
+  port: 1991

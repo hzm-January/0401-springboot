@@ -1,0 +1,5 @@
+logging:
+  level:
+    houzm.accumulation.springboot: debug
+server:
+  port: 8080

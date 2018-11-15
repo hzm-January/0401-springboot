@@ -1,0 +1,23 @@
+#tomcat配置
+server:
+  port: 8083
+  #servlet:
+    #context-path: /hello-boot #hello-boot 必须添加/ ContextPath must start with '/' and not end with '/'
+#日志配置
+logging:
+  level:
+   test.springboot.base: debug #格式为logging.level.包名 = 级别，如果不配置包名报错：org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, java.lang.String>
+
+#配置actuator 访问：http://localhost:9082/actuator/health
+management:
+  server:
+    port: 9082 #actuator 默认端口为应用启动端口
+  security: false #默认开启了安全认证
+
+#关闭浏览器标签页的icon
+spring:
+  mvc:
+    favicon:
+      enabled: false
+#查看已经启用和未启用的自动配置
+debug: false
